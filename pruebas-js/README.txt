@@ -1,0 +1,1 @@
+Esta carpeta estarán aplicado lógica de Js en los jsp, para no alterar por el momento los que funcionan.

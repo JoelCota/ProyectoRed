@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <input type="text" id="comentario">
+        </div>
+        <button type="button" id="btn-comentar">Comentar</button>
+    </div>
+    <div>
+        <div>
+            <input type="text" id="comentario">
+        </div>
+        <button type="button" id="btn-comentar">Comentar</button>
+    </div>
+    <script>
+        let comentario = document.getElementById("comentario");
+        const btnComentar = document.getElementById("btn-comentar");
+        let nuevoComentario;
+
+        const btnEditar = document.createElement("button");
+        btnEditar.innerHTML = "Editar";
+
+        btnComentar.addEventListener("click", () => {
+            const contenedor = comentario.parentElement;
+
+            const data = comentario.value;
+
+            contenedor.removeChild(comentario);
+            nuevoComentario = document.createElement("p");
+            nuevoComentario.innerHTML = data;
+            contenedor.appendChild(nuevoComentario);
+
+            contenedor.appendChild(btnEditar);
+            console.log(comentario);
+        });
+
+        btnEditar.addEventListener("click", () => {
+            const data = nuevoComentario.innerHTML;
+            comentario = document.createElement("input");
+            comentario.setAttribute("value", data);
+            console.log(comentario);
+
+            const contenedor = nuevoComentario.parentElement;
+            contenedor.removeChild(nuevoComentario);
+
+            contenedor.appendChild(comentario);
+        });
+    </script>
+</body>
+</html>

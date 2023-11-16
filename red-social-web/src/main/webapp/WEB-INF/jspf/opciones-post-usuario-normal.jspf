@@ -1,0 +1,13 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="Opciones-post">
+    <details>
+        <summary>•••</summary>
+        <div class="Opciones-details">
+            <ul>
+                <li id="editar-${post.id}">Editar</li>
+                  <li id="post-${post.id} " onclick="eliminarDiv('${post.id}')">Eliminar</li>
+            </ul>
+        </div>
+    </details>
+</div>

@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+summary,
+label,
+li {
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.Cabecera {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navegador-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navegador-cabecera a{
+    margin: 0px 10px;
+}
+
+.Navegador-cabecera a > img{
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+
+}
+
+header {
+    padding: 0px 20px;
+}
+
+.nombre-aplicacion{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.Buscador-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.Buscador-header > .contenedor-buscador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #0077B6;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
+
+.Buscador-header > .contenedor-buscador > form{
+    display: flex;
+    flex-grow: 2;
+    width: 100%;
+}
+
+.Buscador-header > .contenedor-buscador > form > input::placeholder{
+    font-family: 'Krub';
+    font-weight: inherit;
+}
+
+.Buscador-header > .contenedor-buscador > form > input:focus{
+    border: transparent;
+    outline: none;
+}
+
+.Buscador-header > .contenedor-buscador > form > input{
+    background: rgba(0,0,0,0);
+    border: none;
+    font-family: 'Krub';
+    font-weight: inherit;
+    width: 100%;
+}
+
+.Buscador-header > .contenedor-buscador > button{
+    background: rgba(0,0,0,0);
+    border: 0px;
+    outline: none;
+}
+
+.Buscador-header > .contenedor-buscador > button> img{
+    flex-grow: 1;
+    width: 15px;
+    cursor: pointer;
+}
+
+.Buscador-header > .contenedor-buscador > form > input::selection{
+    border: 0px;
+}
+
+
+.Cabecera > div > .imagen-aplicacion > img{
+    width: 50px;
+    height: 50px;
+}
+
+nav h4 {
+    margin: 0px 10px;
+}
+
+input[type=text] {
+    border: 0px;
+    color: white;
+}
+
+input[type=submit] {
+    border-color: #0077B6;
+}
+
+input::placeholder {
+    color: #90E0EF;
+}
+
+p,
+input::placeholder {
+    font-family: 'Krub';
+    font-weight: lighter;
+}
+
+body {
+    max-height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75px 100% 75px;
+    background-color: #03045E;
+}
+
+main.header {
+    background: rgba(0, 0, 0, .5);
+}
+
+body>header,
+body>footer {
+    background-color: #023E8A;
+}
+
+section {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 95% 5%;
+    column-gap: 50px;
+    background: linear-gradient(#0d304f, #0d304f);
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+aside {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.Form-orden-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.Imagen-usuario{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.Imagen-usuario > img{
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+}
+
+.Bienvenida-usuario, .Nombre-usuario-session{
+    text-align: center;
+}
+
+.Nombre-usuario-session > p{
+    margin: 0px;
+}
+
+.Form-orden-post > form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+}
+
+form > div {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: medium;
+    background-color: #023E8A;
+    border-color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.form-crear-publicacion {
+    margin: 10px 0;
+}
+
+.Button-crear-publicacion {
+    padding: 10px;
+    border: 1px solid;
+}
+
+form > div > a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+form > .Button-crear-publicacion:hover{
+    background-color: #0077B6;
+}
+
+form > div > img{
+    width: 15%;
+}
+
+main {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+}
+
+.Paginado{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.Paginado > div{
+    width: auto;
+    height: auto;
+    margin: 5px;
+}
+
+.Imagen-paginado > a > img{
+    width: 35px;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.Opciones-details {
+    display: flex;
+    align-content: end;
+    position: absolute;
+    border: 1px white solid;
+    border-radius: 15px;
+    background-color: #0077B6;
+}
+
+.Opciones-details>ul {
+    margin: 0px;
+    padding: 10px;
+}
+
+.Opciones-details>ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.Post {
+    border: 1px white solid;
+    border-radius: 15px;
+    margin: 20px 10px;
+    padding: 20px;
+    width: 90%;
+    height: auto;
+    background-color: #023E8A;
+}
+
+.Encabezado-post {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Titulo-post{
+    display: flex;
+    flex-direction: row;
+}
+
+.Titulo-post > .Datos-post{
+    display: flex;
+    flex-direction: column;
+}
+
+.Titulo-post > .Datos-post > p, h3{
+    min-height: 20px;
+    margin: 0px;
+}
+
+.Titulo-post > .Datos-post > p > span, h3 > span{
+    outline: none;
+    border: none;
+    margin: 0px;
+}
+
+.Titulo-post > .Datos-post > p{
+    font-size: x-small;
+}
+
+.Titulo-post > .FechaCreacion{
+    display: flex;
+    align-items: end;
+}
+
+.Titulo-post > .FechaCreacion > p{
+    font-size: x-small;
+    margin: 0px 10px;
+    font-weight: bold;
+} 
+
+.Post-contenido{
+    display: flex;
+    align-items: center;
+}
+
+.Contenido {
+    width: auto;
+    height: 100%;
+    background-color: #0077B6;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    flex-grow: 2;
+}
+
+.Contenido>p {
+    margin: 0px;
+    font-size: 15px;
+    min-height: 20px;
+}
+
+.Contenido>p> span:focus {
+    outline: none;
+}
+
+.Post-contenido > .button-actualizar > button{
+    background: rgba(0,0,0,0);
+    border: 0px;
+}
+
+.Post-contenido > .button-actualizar > button > img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.Imagen-anclado-post{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.Imagen-anclado-post > img{
+    width: 2%;
+    height: 2%;
+    transform: rotate(45deg);
+}
+
+.Abrir-comentarios>details>summary {
+    display: flex;
+    align-content: center;
+    margin: 10px 0px;
+}
+
+.Comentar>.Form-comentario>form {
+    display: flex;
+    align-items: center;
+}
+
+.Form-comentario>form>.Input-Comentario {
+    display: flex;
+    flex-grow: 3;
+}
+
+.Form-comentario>form>.Input-Comentario>input {
+    width: 100%;
+    height: 100%;
+    background-color: #0077B6;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.Form-comentario>form>.Enviar-comentario {
+    flex-grow: 0;
+}
+
+.Form-comentario>form>.Enviar-comentario>button {
+    background: none;
+    border: 0px;
+}
+
+.Form-comentario>form>.Enviar-comentario>button>img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.Comentarios {
+    display: flex;
+    flex-direction: column;
+}
+
+.Abrir-comentarios > details > summary > img{
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.Comentario {
+    display: flex;
+    flex-direction: column;
+}
+
+.Comentario-parte-superior {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Contenido-comentario {
+    background-color: #0077B6;
+    border-radius: 15px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.Contenido-mensaje-comentario{
+    display: flex;
+}
+
+.Nombre-usuario-comentario>label,
+.Contenido-mensaje-comentario>p{
+    font-size: x-small;
+}
+
+.Contenido-mensaje-comentario>p {
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.Abrir-respuestas>details>summary {
+    display: flex;
+    align-content: center;
+    font-size: x-small;
+    margin: 2px 0px;
+    padding: 0px 5px;
+}
+
+.Respuestas-comentario {
+    display: flex;
+    flex-direction: column;
+}
+
+.Respuesta{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0px;
+    align-items: center;
+}
+
+.Respuesta>.Contenido-respuesta {
+    width: 100%;
+    margin-left: 40px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #0077B6;
+}
+
+.Nombre-usuario-respuesta>label,
+.Contenido-mensaje-respuesta>p {
+    margin: 0px;
+    font-size: xx-small;
+}
+
+.Responder-comentario {
+    margin-left: 40px;
+}
+
+.Responder-comentario>.Form-respuesta-comentario>form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Responder-comentario>.Form-respuesta-comentario>form>.Input-respuesta {
+    display: flex;
+    flex-grow: 2;
+}
+
+.Responder-comentario>.Form-respuesta-comentario>form>.Input-respuesta>input {
+    width: 100%;
+    height: 100%;
+    background-color: #0077B6;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0px;
+    font-size: xx-small;
+    outline: none;
+}
+
+.Responder-comentario>.Form-respuesta-comentario>form>.Enviar-respuesta {
+    flex-grow: 0;
+}
+
+.Responder-comentario>.Form-respuesta-comentario>form>.Enviar-respuesta>button {
+    background: none;
+    border: 0px;
+}
+
+.Responder-comentario>.Form-respuesta-comentario>form>.Enviar-respuesta>button>img {
+    width: 25px;
+    height: 25px
+}
+
+.Opciones-respuesta > .Opciones > details{
+    margin-left: 10px;
+}
+
+.Opciones-respuesta > .Opciones > details li{
+    cursor: pointer;
+}

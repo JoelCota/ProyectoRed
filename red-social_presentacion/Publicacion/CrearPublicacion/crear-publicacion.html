@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear publicación</title>
+    <link rel="stylesheet" href="crear-publicacion.css">
+</head>
+<body>
+    <main class="main">
+        <section class="main__section">
+            <div class="main__section-container">
+                <form class="main__section-form">
+                    <div class="main__section-form-titulo">
+                        <label class="main__section-form-titulo-label" for="titulo">Título:</label>
+                        <input class="main__section-form-titulo-input" type="text" name="titulo" id="titulo" placeholder="Escribe un título">
+                    </div>
+                    <div class="main__section-form-contenido">
+                        <label class="main__section-form-contenido-label" for="contenido">Contenido:</label>
+                        <textarea class="main__section-form-contenido-textarea" name="contenido" id="contenido" cols="30" rows="10" placeholder="¿Qué estás pensando?"></textarea>
+                    </div>
+                    <div class="main__section-form-publicar">
+                        <button class="main__section-form-publicar-confirmar">Publicar</button>
+                        <div class="main__section_form-publicar-anclar">
+                            <input type="checkbox" name="anclar" id="anclar">
+                            <label for="anclar">Anclar</label>
+                        </div>
+                        <button class="main__section-form-publicar-cancelar">Cancelar</button>
+                    </div>
+                </form>  
+            </div>
+        </section>
+    </main>
+</body>
+</html>

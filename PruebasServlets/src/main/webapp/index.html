@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload Form</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form action="./imageServlet?action=subir" method="post" enctype="multipart/form-data">
+        <input type="file" name="imageFile" />
+        <input type="submit" value="Upload" />
+    </form>
+    <img src="./pictureServlet?action=cargar" alt="Uploaded Image" />
+</body>
+</html>
